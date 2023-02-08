@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RestApiSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Paths>
+    <RestPath>
+      <UrlTemplate>dataset/{uuid}/data</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>dataset/{uuid}/data</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Data</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Data</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>NPI</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>LAST_NAME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>FIRST_NAME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>PARTB</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>DME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>HHA</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>PMD</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Children>
+                <Elements />
+                <Referenced />
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>uuid</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <InputContentType>application/json</InputContentType>
+          <OutputContentType>application/json</OutputContentType>
+          <Name>Data</Name>
+        </RestOperation>
+      </Operations>
+      <Name>dataset/{uuid}/data</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>dataset/{uuid}/data-viewer/stats</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>dataset/{uuid}/data-viewer/stats</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Data Viewer Stats</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Data_Viewer_Stats</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <CoreDbType>Boolean</CoreDbType>
+                            <Name>success</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Boolean</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>NVarChar</CoreDbType>
+                            <Name>datset_uuid</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>meta</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <CoreDbType>Int64</CoreDbType>
+                            <Name>found_rows</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Integer</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>Int64</CoreDbType>
+                            <Name>total_rows</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Integer</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>data</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements />
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>href</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>self</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                            <Indicator>None</Indicator>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>links</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>uuid</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <InputContentType>application/json</InputContentType>
+          <OutputContentType>application/json</OutputContentType>
+          <Name>Data_Viewer_Stats</Name>
+        </RestOperation>
+      </Operations>
+      <Name>dataset/{uuid}/data-viewer/stats</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>dataset/{uuid}/data-viewer</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>dataset/{uuid}/data-viewer</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Data Viewer</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Data_Viewer</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>__data__</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>item</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                            <Indicator>None</Indicator>
+                          </MetaBaseOfMetaElement>
+                        </Children>
+                        <Elements>
+                          <MetaElement>
+                            <CoreDbType>NVarChar</CoreDbType>
+                            <Name>__data__</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>data</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                    </Children>
+                    <Elements />
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>__data__</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>headers</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                            <Indicator>None</Indicator>
+                          </MetaBaseOfMetaElement>
+                        </Children>
+                        <Elements>
+                          <MetaElement>
+                            <CoreDbType>Boolean</CoreDbType>
+                            <Name>success</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Boolean</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>NVarChar</CoreDbType>
+                            <Name>datset_uuid</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>NVarChar</CoreDbType>
+                            <Name>data_file_name</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>NVarChar</CoreDbType>
+                            <Name>data_file_url</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>Int64</CoreDbType>
+                            <Name>total_rows</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Integer</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>Int64</CoreDbType>
+                            <Name>offset</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Integer</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>Int64</CoreDbType>
+                            <Name>size</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Integer</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                          <MetaElement>
+                            <CoreDbType>Boolean</CoreDbType>
+                            <Name>altered</Name>
+                            <HasCollections>false</HasCollections>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <DataType>Boolean</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <CoreDbType>Int64</CoreDbType>
+                                <Name>csvFileSize</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>Integer</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                              <MetaElement>
+                                <CoreDbType>Int64</CoreDbType>
+                                <Name>csvFileModifiedTime</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>Integer</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>csvFileSHA1</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>import_status</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced>
+                              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                <Children />
+                                <Elements>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>NPI</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>LAST_NAME</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>FIRST_NAME</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>PARTB</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>DME</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>HHA</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                  <MetaElement>
+                                    <CoreDbType>NVarChar</CoreDbType>
+                                    <Name>PMD</Name>
+                                    <HasCollections>false</HasCollections>
+                                    <IsPrimaryKey>false</IsPrimaryKey>
+                                    <DataType>String</DataType>
+                                    <CanRead>true</CanRead>
+                                    <CanWrite>true</CanWrite>
+                                  </MetaElement>
+                                </Elements>
+                                <Referenced />
+                                <Name>csvColumnTypes</Name>
+                                <InboundPortVisible>true</InboundPortVisible>
+                                <OutboundPortVisible>true</OutboundPortVisible>
+                                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                <IsEmbeddedMember>false</IsEmbeddedMember>
+                                <Indicator>None</Indicator>
+                              </MetaBaseOfMetaElement>
+                              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                <Children />
+                                <Elements />
+                                <Referenced>
+                                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                    <Children />
+                                    <Elements>
+                                      <MetaElement>
+                                        <CoreDbType>NVarChar</CoreDbType>
+                                        <Name>alignment</Name>
+                                        <HasCollections>false</HasCollections>
+                                        <IsPrimaryKey>false</IsPrimaryKey>
+                                        <DataType>String</DataType>
+                                        <CanRead>true</CanRead>
+                                        <CanWrite>true</CanWrite>
+                                      </MetaElement>
+                                    </Elements>
+                                    <Referenced />
+                                    <Name>NPI</Name>
+                                    <InboundPortVisible>true</InboundPortVisible>
+                                    <OutboundPortVisible>true</OutboundPortVisible>
+                                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                                    <Indicator>None</Indicator>
+                                  </MetaBaseOfMetaElement>
+                                </Referenced>
+                                <Name>csvDisplayFormatting</Name>
+                                <InboundPortVisible>true</InboundPortVisible>
+                                <OutboundPortVisible>true</OutboundPortVisible>
+                                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                <IsEmbeddedMember>false</IsEmbeddedMember>
+                                <Indicator>None</Indicator>
+                              </MetaBaseOfMetaElement>
+                              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                <Children />
+                                <Elements />
+                                <Referenced>
+                                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                    <Children />
+                                    <Elements />
+                                    <Referenced>
+                                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                        <Children />
+                                        <Elements>
+                                          <MetaElement>
+                                            <CoreDbType>NVarChar</CoreDbType>
+                                            <Name>uuid</Name>
+                                            <HasCollections>false</HasCollections>
+                                            <IsPrimaryKey>false</IsPrimaryKey>
+                                            <DataType>String</DataType>
+                                            <CanRead>true</CanRead>
+                                            <CanWrite>true</CanWrite>
+                                          </MetaElement>
+                                          <MetaElement>
+                                            <CoreDbType>NVarChar</CoreDbType>
+                                            <Name>jsonapiLink</Name>
+                                            <HasCollections>false</HasCollections>
+                                            <IsPrimaryKey>false</IsPrimaryKey>
+                                            <DataType>String</DataType>
+                                            <CanRead>true</CanRead>
+                                            <CanWrite>true</CanWrite>
+                                          </MetaElement>
+                                        </Elements>
+                                        <Referenced />
+                                        <Name>1cb95115-25c9-4097-8d12-a8f76b266591</Name>
+                                        <InboundPortVisible>true</InboundPortVisible>
+                                        <OutboundPortVisible>true</OutboundPortVisible>
+                                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                                        <Indicator>None</Indicator>
+                                      </MetaBaseOfMetaElement>
+                                    </Referenced>
+                                    <Name>node:dataset</Name>
+                                    <InboundPortVisible>true</InboundPortVisible>
+                                    <OutboundPortVisible>true</OutboundPortVisible>
+                                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                                    <Indicator>None</Indicator>
+                                  </MetaBaseOfMetaElement>
+                                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                    <Children />
+                                    <Elements />
+                                    <Referenced>
+                                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                                        <Children />
+                                        <Elements>
+                                          <MetaElement>
+                                            <CoreDbType>NVarChar</CoreDbType>
+                                            <Name>uuid</Name>
+                                            <HasCollections>false</HasCollections>
+                                            <IsPrimaryKey>false</IsPrimaryKey>
+                                            <DataType>String</DataType>
+                                            <CanRead>true</CanRead>
+                                            <CanWrite>true</CanWrite>
+                                          </MetaElement>
+                                          <MetaElement>
+                                            <CoreDbType>NVarChar</CoreDbType>
+                                            <Name>jsonapiLink</Name>
+                                            <HasCollections>false</HasCollections>
+                                            <IsPrimaryKey>false</IsPrimaryKey>
+                                            <DataType>String</DataType>
+                                            <CanRead>true</CanRead>
+                                            <CanWrite>true</CanWrite>
+                                          </MetaElement>
+                                        </Elements>
+                                        <Referenced />
+                                        <Name>f3482e96-51b7-4c9d-be89-b50bfb77ff83</Name>
+                                        <InboundPortVisible>true</InboundPortVisible>
+                                        <OutboundPortVisible>true</OutboundPortVisible>
+                                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                                        <Indicator>None</Indicator>
+                                      </MetaBaseOfMetaElement>
+                                    </Referenced>
+                                    <Name>media:primary_dataset_file</Name>
+                                    <InboundPortVisible>true</InboundPortVisible>
+                                    <OutboundPortVisible>true</OutboundPortVisible>
+                                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                                    <Indicator>None</Indicator>
+                                  </MetaBaseOfMetaElement>
+                                </Referenced>
+                                <Name>_entities</Name>
+                                <InboundPortVisible>true</InboundPortVisible>
+                                <OutboundPortVisible>true</OutboundPortVisible>
+                                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                                <IsEmbeddedMember>false</IsEmbeddedMember>
+                                <Indicator>None</Indicator>
+                              </MetaBaseOfMetaElement>
+                            </Referenced>
+                            <Name>data_file_meta_data</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                            <Indicator>None</Indicator>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>meta</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements />
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <CoreDbType>NVarChar</CoreDbType>
+                                <Name>href</Name>
+                                <HasCollections>false</HasCollections>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>self</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                            <Indicator>None</Indicator>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>links</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                        <Indicator>None</Indicator>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>uuid</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <InputContentType>application/json</InputContentType>
+          <OutputContentType>application/json</OutputContentType>
+          <Name>Data_Viewer</Name>
+        </RestOperation>
+      </Operations>
+      <Name>dataset/{uuid}/data-viewer</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>dataset/{uuid}/data.json</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>dataset/{uuid}/data.json</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Data json</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Data_json</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <CoreDbType>Int64</CoreDbType>
+                        <Name>NPI</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>LAST_NAME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>FIRST_NAME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>PARTB</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>DME</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>HHA</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                      <MetaElement>
+                        <CoreDbType>NVarChar</CoreDbType>
+                        <Name>PMD</Name>
+                        <HasCollections>false</HasCollections>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Children>
+                <Elements />
+                <Referenced />
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>uuid</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <InputContentType>application/json</InputContentType>
+          <OutputContentType>application/json</OutputContentType>
+          <Name>Data_json</Name>
+        </RestOperation>
+      </Operations>
+      <Name>dataset/{uuid}/data.json</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>dataset/{uuid}/data.csv</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>dataset/{uuid}/data.csv</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Data.csv</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Data.csv</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>uuid</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <ResponseHeaders />
+          <Name>Data.csv</Name>
+        </RestOperation>
+      </Operations>
+      <Name>dataset/{uuid}/data.csv</Name>
+    </RestPath>
+  </Paths>
+  <Title>CMS_Data_API</Title>
+  
+  <BaseUrl>https://data.cms.gov/data-api/v1/</BaseUrl>
+  <ApiSharedConnection>CMS_Data_API</ApiSharedConnection>
+  <IsDirty>false</IsDirty>
+  <SecuritySchemes>
+    <RestApiSecurity>
+      <Type>IntegratedAuth</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>NoAuth</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>OAuth2</Type>
+      <Flows>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>Implicit</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>authorization_code</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>authorization_code_PKCE</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>password</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>client_credentials</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+      </Flows>
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>ApiKey</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>Http</Type>
+      <Scheme>basic</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>BearerToken</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>NTLM</Type>
+      <Flows />
+    </RestApiSecurity>
+  </SecuritySchemes>
+  <AuthInfo>
+    <Name />
+    <ApiKeyLocation>Header</ApiKeyLocation>
+    <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+    <TokenSecret />
+    <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+    <ApiSecuritySchemeType>NoAuth</ApiSecuritySchemeType>
+    <ProvideTokenManually>false</ProvideTokenManually>
+    <AwsSignature>
+      <AccessKey />
+      <SecretKey />
+    </AwsSignature>
+  </AuthInfo>
+  <IsCustomApiSet>true</IsCustomApiSet>
+  <Timeout>5000</Timeout>
+  <Headers />
+  <SharedConnectionParams />
+  <Models />
+</RestApiSet>
