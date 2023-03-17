@@ -747,7 +747,7 @@
       <Indicator>None</Indicator>
     </MetaObject>
   </Models>
-</RestApiSet>ion="1.0" encoding="utf-8"?>
+</RestApiSet>
 <RestApiSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Paths>
     <RestPath>
