@@ -1,0 +1,2235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RestApiSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Paths>
+    <RestPath>
+      <UrlTemplate>/inventoryItem</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/inventoryItem</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Retrieve all Inventory Items</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Retrieve_Inventory_Item</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <InputContentType>application/json</InputContentType>
+          <OutputContentType>application/json</OutputContentType>
+          <Name>Retrieve_Inventory_Item</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/inventoryItem</ResourcePath>
+          <Method>Post</Method>
+          <Summary>Create an Inventory Item</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create an Inventory Item</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Create an Inventory Item</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/inventoryItem</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/inventoryItem/{id}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/inventoryItem/{id}</ResourcePath>
+          <Method>Delete</Method>
+          <Summary>Remove Inventory item</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Remove Inventory item</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Remove Inventory item</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/inventoryItem/{id}</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Retrieve inventory item by ID</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Retrieve inventory item by ID</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Retrieve inventory item by ID</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/inventoryItem/{id}</ResourcePath>
+          <Method>Patch</Method>
+          <Summary>Update a record</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update a record</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Update a record</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/inventoryItem/{id}</ResourcePath>
+          <Method>Put</Method>
+          <Summary>Upsert inventory item</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Upsert inventory item</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Upsert inventory item</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/inventoryItem/{id}</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/invoice</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/invoice</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get All Invoices</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get All Invoices</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get All Invoices</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/invoice</ResourcePath>
+          <Method>Post</Method>
+          <Summary>Create invoice</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create invoice</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Create invoice</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/invoice</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/invoice/{id}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/invoice/{id}</ResourcePath>
+          <Method>Delete</Method>
+          <Summary>Delete Invoice</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Delete Invoice</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Delete Invoice</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/invoice/{id}</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get Invoice by id</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get Invoice by id</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get Invoice by id</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/invoice/{id}</ResourcePath>
+          <Method>Patch</Method>
+          <Summary>Update Invoice</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update Invoice</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Update Invoice</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/invoice/{id}</ResourcePath>
+          <Method>Put</Method>
+          <Summary>Upsert Invoice</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Upsert Invoice</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Upsert Invoice</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/invoice/{id}</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/salesOrder</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/salesOrder</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get all sales orders</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get all sales orders</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get all sales orders</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/salesOrder</ResourcePath>
+          <Method>Post</Method>
+          <Summary>Create a sales order</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create a sales order</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Create a sales order</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/salesOrder</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/salesOrder/{id}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/salesOrder/{id}</ResourcePath>
+          <Method>Delete</Method>
+          <Summary>Delete sales order</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Delete sales order</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Delete sales order</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/salesOrder/{id}</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get Sales Order by ID</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get Sales Order by ID</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get Sales Order by ID</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/salesOrder/{id}</ResourcePath>
+          <Method>Patch</Method>
+          <Summary>Update a sales order</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update a sales order</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Update a sales order</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/salesOrder/{id}</ResourcePath>
+          <Method>Put</Method>
+          <Summary>Upsert a sales order</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Upsert a sales order</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Upsert a sales order</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/salesOrder/{id}</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/cashSale</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/cashSale</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get all cashSales</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get all cashSales</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get all cashSales</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/cashSale</ResourcePath>
+          <Method>Post</Method>
+          <Summary>Create a Cash Sale record</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create a Cash Sale record</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Create a Cash Sale record</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/cashSale</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/cashSale/{id}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/cashSale/{id}</ResourcePath>
+          <Method>Delete</Method>
+          <Summary>Delete a cash sale</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Delete a cash sale</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Delete a cash sale</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/cashSale/{id}</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get cash sale by id</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get cash sale by id</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get cash sale by id</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/cashSale/{id}</ResourcePath>
+          <Method>Patch</Method>
+          <Summary>Update cash sale</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update cash sale</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Update cash sale</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/cashSale/{id}</ResourcePath>
+          <Method>Put</Method>
+          <Summary>Upsert a cash sale</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Upsert a cash sale</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Upsert a cash sale</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/cashSale/{id}</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/pricePlan</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/pricePlan</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get all price plans</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get all price plans</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get all price plans</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/pricePlan</ResourcePath>
+          <Method>Post</Method>
+          <Summary>Create a price plan</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create a price plan</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Create a price plan</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/pricePlan</Name>
+    </RestPath>
+    <RestPath>
+      <UrlTemplate>/pricePlan/{id}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/pricePlan/{id}</ResourcePath>
+          <Method>Delete</Method>
+          <Summary>Delete a price plan</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Delete a price plan</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Delete a price plan</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/pricePlan/{id}</ResourcePath>
+          <Method>Get</Method>
+          <Summary>Get price plan by id</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get price plan by id</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Get price plan by id</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/pricePlan/{id}</ResourcePath>
+          <Method>Patch</Method>
+          <Summary>Update a price plan</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update a price plan</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Update a price plan</Name>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/pricePlan/{id}</ResourcePath>
+          <Method>Put</Method>
+          <Summary>Upsert a price plan</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Upsert a price plan</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                    <Indicator>None</Indicator>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>id</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>true</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+                <Indicator>None</Indicator>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+            <Indicator>None</Indicator>
+          </RequestMeta>
+          <Name>Upsert a price plan</Name>
+        </RestOperation>
+      </Operations>
+      <Name>/pricePlan/{id}</Name>
+    </RestPath>
+  </Paths>
+  <Title>NetSuite Capi connector</Title>
+  <Fullpath>C:\Users\masood.hyder\Desktop\NetSuite Capi connector\APIs\NetSuite Capi connector.Capi</Fullpath>
+  <BaseUrl>https://ACCOUNTID.suitetalk.api.netsuite.com/services/rest/record/v1</BaseUrl>
+  <ApiSharedConnection>NetSuite Capi connector</ApiSharedConnection>
+  <IsDirty>false</IsDirty>
+  <SecuritySchemes>
+    <RestApiSecurity>
+      <Type>IntegratedAuth</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>NoAuth</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>OAuth2</Type>
+      <Flows>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>Implicit</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>authorization_code</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>authorization_code_PKCE</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>password</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>client_credentials</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+      </Flows>
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>ApiKey</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>Http</Type>
+      <Scheme>basic</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>BearerToken</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>AwsSignature</Type>
+      <Flows />
+    </RestApiSecurity>
+  </SecuritySchemes>
+  <AuthInfo>
+    <ApiKeyLocation>Header</ApiKeyLocation>
+    <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+    <TokenSecret />
+    <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+    <ApiSecuritySchemeType>IntegratedAuth</ApiSecuritySchemeType>
+    <ProvideTokenManually>false</ProvideTokenManually>
+    <AwsSignature>
+      <AccessKey />
+      <SecretKey />
+    </AwsSignature>
+  </AuthInfo>
+  <IsCustomApiSet>true</IsCustomApiSet>
+  <Timeout>5000</Timeout>
+  <Headers />
+  <SharedConnectionParams />
+  <Models />
+</RestApiSet>
